@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wenhao/kollmorgen/2-下位机/测试/test5-posix/neibucesio1/test5.c
+signal.h
+-
+stdio.h
+-
+string.h
+-
+unistd.h
+-
+time.h
+-
+

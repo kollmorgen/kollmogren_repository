@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "1-kollmorgen/RGM_controller-master/kollmorgen/canopen/include/timer.h",
+                "${workspaceFolder}/canopen/include/**",
+                "/usr/src/linux-headers-4.15.0-72-generic/include/linux/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}

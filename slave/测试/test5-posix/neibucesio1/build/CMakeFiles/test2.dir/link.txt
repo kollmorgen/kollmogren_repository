@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/test2.dir/test5.c.o  -o test2 -rdynamic -lpthread -lrt 

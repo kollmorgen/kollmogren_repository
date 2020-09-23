@@ -1,0 +1,1 @@
+arm-linux-gnueabihf-gcc    -lrt CMakeFiles/test.dir/test1.c.o  -o test -rdynamic 

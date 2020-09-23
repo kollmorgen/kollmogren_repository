@@ -1,0 +1,1 @@
+arm-linux-gnueabihf-g++      CMakeFiles/test23.dir/test1.cpp.o  -o test23 -rdynamic 

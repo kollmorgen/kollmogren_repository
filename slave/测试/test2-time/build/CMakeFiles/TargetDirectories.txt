@@ -1,0 +1,3 @@
+/home/wenhao/kollmorgen/2-下位机/测试/test2-time/build/CMakeFiles/edit_cache.dir
+/home/wenhao/kollmorgen/2-下位机/测试/test2-time/build/CMakeFiles/rebuild_cache.dir
+/home/wenhao/kollmorgen/2-下位机/测试/test2-time/build/CMakeFiles/test.dir

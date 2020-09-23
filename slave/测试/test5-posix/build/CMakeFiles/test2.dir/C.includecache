@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wenhao/kollmorgen/2-下位机/测试/test5-posix/time2.c
+stdio.h
+-
+time.h
+-
+sys/time.h
+-
+stdlib.h
+-
+signal.h
+-
+

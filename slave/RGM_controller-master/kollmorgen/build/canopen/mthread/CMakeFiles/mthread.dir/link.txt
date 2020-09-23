@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmthread.a  CMakeFiles/mthread.dir/koll_unit_conver.c.o CMakeFiles/mthread.dir/koll_run.c.o CMakeFiles/mthread.dir/koll_operation.c.o CMakeFiles/mthread.dir/koll_tcp.c.o CMakeFiles/mthread.dir/koll_j1_pos.c.o CMakeFiles/mthread.dir/koll_dynamics.c.o
+/usr/bin/ranlib libmthread.a

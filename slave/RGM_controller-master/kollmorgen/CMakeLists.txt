@@ -1,0 +1,55 @@
+# Define the minimum CMake version that this project was developed for
+cmake_minimum_required(VERSION 2.8)
+
+# Set the project and build type
+project(kollmorgen)
+
+# cross compiling交叉编译:
+set(cmake_system_name Linux)
+set(CMAKE_EIGEN_PATH  /home/mfs/桌面/2-下位机/tronlong/eigen-eigen-3)
+set(CMAKE_C_COMPILER "arm-linux-gnueabihf-gcc")
+set(CMAKE_CXX_COMPILER "arm-linux-gnueabihf-g++")
+set(CMAKE_FIND_ROOT_PATH  /home/mfs/桌面/2-下位机/tronlong/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc)
+
+set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+include_directories(${CMAKE_EIGEN_PATH})
+
+add_definitions("-DNOT_USE_DYNAMIC_LOADING")
+
+#非交叉编译后请取消注释这部分
+  # set(EIGEN_INL /usr/include/eigen3)
+  # include_directories(${EIGEN_INL})
+
+# Include the header files
+include_directories(. ./canopen ./canopen/include ./canopen/tcp ./canopen/include/unix ./canopen/include/timers_unix ./canopen/rgm6 ./canopen/mthread)
+
+#add subdirectory exec 
+add_subdirectory(${PROJECT_SOURCE_DIR}/canopen)
+
+# link libaries
+link_libraries(canfestival)
+link_libraries(canfestival_unix)
+link_libraries(rgm6)
+link_libraries(tcp)
+link_libraries(mthread)
+
+# root directory
+aux_source_directory(. DIR_SRCS)
+add_executable(kollmorgen ${DIR_SRCS})
+
+# link libaries
+# TARGET_LINK_LIBRARIES(kollmorgen canfestival canfestival_unix canfestival_unix_socket rgm6)
+TARGET_LINK_LIBRARIES(kollmorgen canfestival canfestival_unix canfestival_unix_socket rgm6 tcp rt dl)
+
+
+
+
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package(Threads REQUIRED)
+target_link_libraries(kollmorgen Threads::Threads)
+
+
+set(CMAKE_EXE_LINKER_FLAGS "-lpthread -lrt -ldl -lm")
+

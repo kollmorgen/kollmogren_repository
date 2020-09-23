@@ -1,0 +1,1 @@
+arm-linux-gnueabihf-gcc     CMakeFiles/test2.dir/time2.c.o  -o test2 -rdynamic -lpthread -lrt -pthread 

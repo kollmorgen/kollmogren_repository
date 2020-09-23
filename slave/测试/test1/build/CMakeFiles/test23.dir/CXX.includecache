@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wenhao/kollmorgen/2-下位机/测试/test1/test1.cpp
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+

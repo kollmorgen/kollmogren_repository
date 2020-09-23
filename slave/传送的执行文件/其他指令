@@ -1,0 +1,12 @@
+rm tra1.txt tra1_d.txt tra2.txt tra2_d.txt tra3.txt tra3_d.txt tra4.txt tra4_d.txt
+
+
+
+ scp tra1.txt tra1_d.txt tra2.txt tra2_d.txt tra3.txt tra3_d.txt tra4.txt tra4_d.txt wenhao@192.168.1.110:/home/wenhao/1
+
+ssh: Connection to loujichen@192.168.1.110:22 exited: 
+
+ecdsa-sha2-nistp256 host key mismatch for 192.168.1.110 !
+Fingerprint is md5 83:de:db:31:1a:91:68:eb:9a:2b:a4:d1:3d:1c:33:5f
+Expected md5 7e:82:7c:
+
