@@ -10,6 +10,10 @@
 #include<pthread.h>
 #include<string.h>
 
+//test
+
+
+
 using namespace std;
 #define NUM_THREADS 2
 struct sockaddr_in addr;
